@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deepak.myblooddonationapp.ProfileAcitvity">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+
+
+        <ImageView
+            android:id="@+id/ProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
+
+
+
+
+        <ProgressBar
+            android:id="@+id/Progress_Bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"/>
+
+        <TextView
+            android:id="@+id/ProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ProfileImage"
+            android:text="ProfileName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            />
+
+
+        <TextView
+            android:id="@+id/Text_Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ProfileName"
+            android:text="Name :"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ProfileName"
+
+            android:text="New Text"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/Text_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Text_Profile"
+            android:text="Address :"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Text_Profile"
+            android:lines="3"
+            android:text="New Text"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/Text_Contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:text="Contact :"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+
+            android:text="123456789"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/text_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Text_Contact"
+
+            android:text="City :"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Text_Contact"
+
+            android:text="New Text"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true" />
+
+
+
+        <TextView
+            android:id="@+id/text_B_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_city"
+            android:text="Blood Group : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingLeft="16dp" />
+        <TextView
+            android:id="@+id/B_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_city"
+            android:text="New Text"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:id="@+id/text_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@id/text_B_group"
+            android:paddingLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mail Text"
+            android:layout_below="@id/text_B_group"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"/>
+
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_Email"
+            android:drawableLeft="@drawable/ic_call_24dp"
+            android:onClick="oncallclick"
+            android:text="Call"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_alignParentRight="true"
+             />
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+
+</RelativeLayout>
