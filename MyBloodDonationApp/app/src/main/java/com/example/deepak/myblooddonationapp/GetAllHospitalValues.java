@@ -88,7 +88,7 @@ public class GetAllHospitalValues extends AsyncTask<String,Void,String> {
 
         } catch (Exception e) {
             Toast.makeText(context, "ERROR" + e.getMessage(), Toast.LENGTH_SHORT).show();
-            ;
+            Toast.makeText(context,"hahahah", Toast.LENGTH_SHORT).show();
         }
 
 
